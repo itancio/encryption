@@ -14,6 +14,8 @@ The goal is to use the provided resources and security knowledge to create a cli
 ## Design process
 The design concept relies on a tree structure that operates like a centralized hub-and-spoke model with the file sharer at the core.Thumbnail
 
+<img src="assets/encryption-diagram.png" width="80%" />
+
 * Central Hub (Root Node):
 The file sharer (owner) sets up this central point. This hub contains information required to generate encryption and authentication keys, ensuring that only authorized individuals can access the stored file. A deterministic data, is utilized to generate or derive these keys, ensuring that even if the central hub is exposed, the file data remains secure.
 
